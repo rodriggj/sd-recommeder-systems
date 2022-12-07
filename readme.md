@@ -1,4 +1,4 @@
-# SunGuard - Building `Recommender Systems` Course
+# Sundog Education - Building `Recommender Systems` Course
 
 ## Contents
 - [ ] 1.0 Getting Started
