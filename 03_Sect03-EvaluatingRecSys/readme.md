@@ -39,11 +39,26 @@ Example
 | predicted rating (y) | actual rating (x) | absolute delta | 
 | ---------------------| ------------------| ---------------|
 | 5 | 3 | 2 |
+| 4 | 1 | 3 | 
+| 5 | 4 | 1 | 
+| 1 | 1 | 0 |
 
+MAE = (2 + 3 + 1 + 0) / 4 = 1.5
 
+### Root Mean Square Error (RMSE)
 
+> root mean square error (rmse): the benefit of this accuracy predictor is that it penalizes you more when you are way off and way less when you are reasonably close. The construct is similar, it is the sum of the differences between the predicted rating and the actual rating. It nets out to be a positive number b/c the results are squared, but it penalizes you less the more accurate you are. 
 
+| predicted rating (y) | actual rating (x) | error^2 | 
+| ---------------------| ------------------| ---------------|
+| 5 | 3 | 4 |
+| 4 | 1 | 9 | 
+| 5 | 4 | 1 | 
+| 1 | 1 | 0 |
+
+RMSE = sqrt(4 + 9 + 1 + 0)/4 = 1.87
+
+Realize that Accuracy Predidictions in the case of Recommendation Systems have limited value. No one cares the prediction accuracy of a recommendation ... they care that the prediction (aka recommendation) is something that may be correlated to thier previous purchasing / browsing / interests are. So it is important to understand accuracy metrics but more important to evalute success of the models based on "recommends" vs. "fitting" of a predictive curve. 
 
 ## Reference
-
-
+- [ ] Netflix RMSE Prize - Bellkor [here](https://www.scinapse.io/papers/54392637)
