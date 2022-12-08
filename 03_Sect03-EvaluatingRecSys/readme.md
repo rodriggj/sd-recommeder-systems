@@ -3,7 +3,7 @@
 ## Ojectives
 - [ ] Test/Train Cross Validation
 - [ ] Accuracy Metrics (RMSE, MAE)
-- [ ] 
+- [ ] RMSE doesn't help Recommender Systems
 
 ## Steps 
 
